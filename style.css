@@ -6,8 +6,9 @@ body,html{
     position: relative;
     font-weight: 300;
     user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
   }
-#CarViewer{
+#MKviewer{
     height: 100vh;
     width: 100vw;
     background-color: #f3f3f3;
@@ -23,10 +24,79 @@ body,html{
   top: 50%;
   transform: translate(-50%,-50%);
 }
-#CarViewer .logo{
+#MKviewer .logo{
   width: 400px;
   height: auto;
   position: absolute;
   top: 10px;
   right: 10px;
+}
+.menu{
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 0%;
+  padding:0.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu .tabs{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .tabs ._tab{
+  padding: 0.3rem 2rem;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.activ_tab{
+  background-color: green;
+  color: white;
+  border: 1px solid transparent !important;
+}
+.menu .content{
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0rem;
+}
+.menu .content span{
+  font-size: 20px;
+  padding: 0.2rem 0rem;
+}
+.menu .content .items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .content .items .item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0rem 1rem;
+  padding: 0rem 1rem;
+  border-radius: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.menu .content .items .item img{
+  width: 100px;
+  height: auto;
+  padding: 5%;
+}
+.menu .content .items .item h5{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 200;
 }
