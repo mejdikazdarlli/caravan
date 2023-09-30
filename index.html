@@ -4,55 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" media="all"  />
-    <title>MyCarSize</title>
+    <title>Bruegmann</title>
 </head>
 <body>
     <div id="MKviewer">
         <img class="logo" src="img/logo-S.png" alt="">
         <div id="loader_spiner"><img src="img/Loading.gif" alt=""></div>
+        <div class="setting">
+            <div class="colors">
+                <div class="col" data-col="black">
+                    <img src="img/Anthrazit.png" alt="">
+                    <h5>Anthrazit</h5>
+                </div>
+                <div class="col" data-col="4e3634">
+                    <img src="img/Mocca.png" alt="">
+                    <h5>Mocca</h5>
+                </div>
+                <div class="col" data-col="eed7ab">
+                    <img src="img/Creme.png" alt="">
+                    <h5>Creme</h5>
+                </div>
+                <div class="col" data-col="232849">
+                    <img src="img/Blau.png" alt="">
+                    <h5>Blau</h5>
+                </div>
+                <div class="col" data-col="928f88">
+                    <img src="img/Grau.png" alt="">
+                    <h5>Grau</h5>
+                </div>
+                <div class="col" data-col="6f3332">
+                    <img src="img/Rot.png" alt="">
+                    <h5>Rot</h5>
+                </div>
+                <div class="col" data-col="ffffff">
+                    <img src="img/Weiss.png" alt="">
+                    <h5>Weiss</h5>
+                </div>
+            </div>
+            <div class="delete">
+                <i class='fa fa-trash icons'></i>
+            </div>
+        </div>
+        <div class="position">
+            <h3>Select Position</h3>
+            <div class="content">
+                <div class="pos" data-pos="leftSide" data-rot="true">
+                    <img src="img/leftSide.png" alt="">
+                    <span>Left Sided Door</span>
+                </div>
+                <div class="pos" data-pos="leftFront" data-rot="false">
+                    <img src="img/leftFront.png" alt="">
+                    <span>Left Door</span>
+                </div>
+                <div class="pos" data-pos="RightFront" data-rot="false">
+                    <img src="img/RightFront.png" alt="">
+                    <span>Right Door</span>
+                </div>
+                <div class="pos" data-pos="RightSide" data-rot="true">
+                    <img src="img/RightSide.png" alt="">
+                    <span>Right Sided Door</span>
+                </div>
+            </div>
+        </div>
         <div class="menu">
             <div class="tabs">
-                <span class="_tab activ_tab">Türen</span>
-                <span class="_tab">Fenster</span>
+                <span class="_tab activ_tab" data-item="item_Door">Doors</span>
+                <span class="_tab" data-item="item_Window">Windows</span>
             </div>
-            <div class="content">
-                <span>Choose Türen</span>
-                <div class="items">
-                    <div class="item">
+            <div class="content contentTab">
+                <!-- <span>Choose Doors</span> -->
+                <div class="items" id="item_Door">
+                    <div data-itm="EntranceGate90" class="item itm">
                         <img src="img/doorA.png" alt="">
                         <h5>Entrance gate
                             <br>
                             90 x 195
                         </h5>
                     </div>
-                    <div class="item">
+                    <div data-itm="PsicSchiebetior90" class="item itm">
                         <img src="img/doorA.png" alt="">
                         <h5>Psic schiebetior
                             <br>
                             90 x 195
                         </h5>
                     </div>
-                    <div class="item">
+                    <div data-itm="4pcs280" class="item itm">
                         <img src="img/doorB.png" alt="">
                         <h5>4pcs. mullion element
                             <br>
                             280 x 195
                         </h5>
                     </div>
-                    <div class="item">
+                    <div data-itm="4pcs230" class="item itm">
                         <img src="img/doorC.png" alt="">
                         <h5>4pcs. mullion element
                             <br>
                             230 x 195
                         </h5>
                     </div>
-                    <div class="item">
+                    <div data-itm="2pcs140" class="item itm">
                         <img src="img/doorD.png" alt="">
                         <h5>2pcs. Balzontir
                             <br>
                             140 x 195
                         </h5>
+                    </div>
+                </div>
+                <div class="items" id="item_Window" style="display: none;">
+                    <div data-itm="window-A" class="item itm">
+                        <img src="img/window-A.png" alt="">
+                        <h5>window-A <br>
+                            000 x 000</h5>
+                    </div>
+                    <div data-itm="window-B" class="item itm">
+                        <img src="img/window-B.png" alt="">
+                        <h5>window-B <br>
+                            000 x 000</h5>
+                    </div>
+                    <div data-itm="window-C" class="item itm">
+                        <img src="img/window-C.png" alt="">
+                        <h5>window-C <br>
+                            000 x 000</h5>
+                    </div>
+                    <div data-itm="window-D" class="item itm">
+                        <img src="img/window-D.png" alt="">
+                        <h5>window-D <br>
+                            000 x 000</h5>
+                    </div>
+                    <div data-itm="window-E" class="item itm">
+                        <img src="img/window-E.png" alt="">
+                        <h5>window-E <br>
+                            000 x 000</h5>
                     </div>
                 </div>
             </div>
